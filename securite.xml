@@ -1,0 +1,468 @@
+<rss version="2.0">
+    <channel>
+        <atom:link href="https://www.01net.com/actualites/securite/" rel="self" type="application/rss+xml"/>
+        <title>Sécurité - 01net</title>
+        <link>https://www.01net.com/actualites/securite/</link>
+        <description>Sécurité, hacking, piratage et cybercriminalitésuivez toute l'actualité pour bien se protéger sur internet avec 01net.</description>
+        <language>fr</language>
+        <copyright>Copyright 01NET</copyright>
+        <pubDate>Mon, 10 Jun 2019 11:51:03 +0200</pubDate>
+        <lastBuildDate>Mon, 10 Jun 2019 11:51:03 +0200</lastBuildDate>
+        <ttl>15</ttl>
+        <image>
+            <title>Sécurité - 01net</title>
+            <url>https://static.bfmtv.com/ressources/img/logo/logo-01net-gris.png</url>
+            <link>https://www.01net.com/actualites/securite/</link>
+        </image>
+        <item>
+            <title>Un important volume de trafic de Bouygues Telecom et SFR a été détourné vers la Chine</title>
+            <description>Pendant deux heures, des données qui étaient destinées à certains opérateurs européens ont fait un crochet par l’empire du Milieu, en raison d’un incident au niveau du protocole de routage BGP.  <br/>
+                <br/> 
+                <img src="https://img.bfmtv.com/c/150/100/1ca/af0b791033128885db5d4b5bf3ddb.jpg"/>
+            </description>
+            <link>
+                https://www.01net.com/actualites/un-important-volume-de-trafic-de-bouygues-telecom-et-sfr-a-ete-detourne-vers-la-chine-1709148.html
+            </link>
+            <pubDate>Mon, 10 Jun 2019 12:49:25 +0200</pubDate>
+            <guid isPermaLink="false">
+                https://www.01net.com/actualites/un-important-volume-de-trafic-de-bouygues-telecom-et-sfr-a-ete-detourne-vers-la-chine-1709148.html
+            </guid>
+            <enclosure url="https://img.bfmtv.com/i/0/0/1ca/af0b791033128885db5d4b5bf3ddb.jpg" type="image/jpg" length="0"/>
+        </item>
+        <item>
+            <title>Windows 10 : une nouvelle faille zero-day publiée sur Internet</title>
+            <description>La chercheuse SandboxEscaper a découvert une seconde manière de contourner un patch que Microsoft a publié en avril dernier. Elle permet à un attaquant d’obtenir les privilèges System sur une machine.  <br/>
+                <br/> 
+                <img src="https://img.bfmtv.com/c/150/100/e07b5/716cfeed19a415019f2d36c9346.jpg"/>
+            </description>
+            <link>
+                https://www.01net.com/actualites/windows-10-une-nouvelle-faille-zero-day-publiee-sur-internet-1709082.html
+            </link>
+            <pubDate>Mon, 10 Jun 2019 10:47:34 +0200</pubDate>
+            <guid isPermaLink="false">
+                https://www.01net.com/actualites/windows-10-une-nouvelle-faille-zero-day-publiee-sur-internet-1709082.html
+            </guid>
+            <enclosure url="https://img.bfmtv.com/i/0/0/e07b5/716cfeed19a415019f2d36c9346.jpg" type="image/jpg" length="0"/>
+        </item>
+        <item>
+            <title>Le site web des impôts victime d’une cyberattaque ?</title>
+            <description>Des « adresses IP suspectes venues de l’étranger » auraient été détectées dans le flot de connexions qui a fait tomber le site impots.gouv.fr cette semaine. Deux enquêtes ont été ouvertes.  <br/>
+                <br/> 
+                <img src="https://img.bfmtv.com/c/150/100/376/de2a8457ac264aa3805897ea83fc1.jpg"/>
+            </description>
+            <link>
+                https://www.01net.com/actualites/le-site-web-des-impots-victime-d-une-cyberattaque-1707388.html
+            </link>
+            <pubDate>Fri, 07 Jun 2019 11:30:39 +0200</pubDate>
+            <guid isPermaLink="false">
+                https://www.01net.com/actualites/le-site-web-des-impots-victime-d-une-cyberattaque-1707388.html
+            </guid>
+            <enclosure url="https://img.bfmtv.com/i/0/0/376/de2a8457ac264aa3805897ea83fc1.jpg" type="image/jpg" length="0"/>
+        </item>
+        <item>
+            <title>Une porte dérobée préinstallée sur une série de smartphones Android</title>
+            <description>Quatre modèles d’entrée de gamme ont été commercialisés en ligne avec une backdoor qui collecte des données et peut installer en douce n’importe quel logiciel par la suite.    <br/>
+                <br/> 
+                <img src="https://img.bfmtv.com/c/150/100/3ac/9cf7c22f9521eaeebc20ee1a95162.jpg"/>
+            </description>
+            <link>
+                https://www.01net.com/actualites/une-porte-derobee-preinstallee-sur-une-serie-de-smartphones-android-1707365.html
+            </link>
+            <pubDate>Fri, 07 Jun 2019 10:50:17 +0200</pubDate>
+            <guid isPermaLink="false">
+                https://www.01net.com/actualites/une-porte-derobee-preinstallee-sur-une-serie-de-smartphones-android-1707365.html
+            </guid>
+            <enclosure url="https://img.bfmtv.com/i/0/0/3ac/9cf7c22f9521eaeebc20ee1a95162.jpg" type="image/jpg" length="0"/>
+        </item>
+        <item>
+            <title>Pourquoi Apple vient peut être de remporter une bataille majeure pour protéger votre vie privée</title>
+            <description>Inattendue et pourtant retentissante, l’annonce d’un service d’identification conçu par Apple pourrait avoir de nombreuses conséquences. Couper l’herbe sous le pied de Google et Facebook d’une part, mais aussi mieux protéger notre vie privée numérique.  <br/>
+                <br/> 
+                <img src="https://img.bfmtv.com/c/150/100/a05d8/693cd9c3cd2e8046d1089760f01.jpg"/>
+            </description>
+            <link>
+                https://www.01net.com/actualites/pourquoi-apple-vient-peut-etre-de-remporter-une-bataille-majeure-pour-proteger-votre-vie-privee-1706695.html
+            </link>
+            <pubDate>Thu, 06 Jun 2019 04:42:37 +0200</pubDate>
+            <guid isPermaLink="false">
+                https://www.01net.com/actualites/pourquoi-apple-vient-peut-etre-de-remporter-une-bataille-majeure-pour-proteger-votre-vie-privee-1706695.html
+            </guid>
+            <enclosure url="https://img.bfmtv.com/i/0/0/a05d8/693cd9c3cd2e8046d1089760f01.jpg" type="image/jpg" length="0"/>
+        </item>
+        <item>
+            <title>Plus de 440 millions de smartphones Android inondés de pubs par un malware</title>
+            <description>Caché dans 238 applications du Google Play Store, un plug-in a tellement déversé de publicités que les utilisateurs ne pouvaient plus utiliser leur terminal mobile.  <br/>
+                <br/> 
+                <img src="https://img.bfmtv.com/c/150/100/30ef6/40d8d5c5a06c542d560f590630b.jpg"/>
+            </description>
+            <link>
+                https://www.01net.com/actualites/plus-de-440-millions-de-smartphones-android-inondes-de-pubs-par-un-malware-1706069.html
+            </link>
+            <pubDate>Wed, 05 Jun 2019 06:48:01 +0200</pubDate>
+            <guid isPermaLink="false">
+                https://www.01net.com/actualites/plus-de-440-millions-de-smartphones-android-inondes-de-pubs-par-un-malware-1706069.html
+            </guid>
+            <enclosure url="https://img.bfmtv.com/i/0/0/30ef6/40d8d5c5a06c542d560f590630b.jpg" type="image/jpg" length="0"/>
+        </item>
+        <item>
+            <title>Firefox bloque désormais les cookies de pistage par défaut</title>
+            <description>La fondation Mozilla a également renforcé la protection de son extension « Facebook Container » qui désactive désormais les boutons du réseau social sur toutes les pages web.  <br/>
+                <br/> 
+                <img src="https://img.bfmtv.com/c/150/100/e95/46d286a6fa0cf85420d2ca19ffceb.jpg"/>
+            </description>
+            <link>
+                https://www.01net.com/actualites/firefox-bloque-desormais-les-cookies-de-pistage-par-defaut-1705781.html
+            </link>
+            <pubDate>Wed, 05 Jun 2019 12:29:08 +0200</pubDate>
+            <guid isPermaLink="false">
+                https://www.01net.com/actualites/firefox-bloque-desormais-les-cookies-de-pistage-par-defaut-1705781.html
+            </guid>
+            <enclosure url="https://img.bfmtv.com/i/0/0/e95/46d286a6fa0cf85420d2ca19ffceb.jpg" type="image/jpg" length="0"/>
+        </item>
+        <item>
+            <title>Désormais millionnaires, les auteurs du terrible ransomware GandCrab prennent leur retraite</title>
+            <description>D’après les pirates, ce malware aurait généré plus de deux milliards de dollars pour l’ensemble de l’écosystème de malfaiteurs.  <br/>
+                <br/> 
+                <img src="https://img.bfmtv.com/c/150/100/150cac/e88eab6db86ee17eb36d7fed95.jpg"/>
+            </description>
+            <link>
+                https://www.01net.com/actualites/les-auteurs-du-ransomware-gandcrab-prennent-leur-retraite-1705123.html
+            </link>
+            <pubDate>Tue, 04 Jun 2019 12:37:47 +0200</pubDate>
+            <guid isPermaLink="false">
+                https://www.01net.com/actualites/les-auteurs-du-ransomware-gandcrab-prennent-leur-retraite-1705123.html
+            </guid>
+            <enclosure url="https://img.bfmtv.com/i/0/0/150cac/e88eab6db86ee17eb36d7fed95.jpg" type="image/jpg" length="0"/>
+        </item>
+        <item>
+            <title>Une faille zero-day dans macOS permet de générer de faux clics malveillants</title>
+            <description>Un chercheur en sécurité a montré qu’il est possible de contourner n’importe quelle alerte de contrôle d’accès sur macOS Mojave et, ainsi, d’obtenir les privilèges les plus élevés sur la machine. Aucun correctif n'est disponible à ce jour.  <br/>
+                <br/> 
+                <img src="https://img.bfmtv.com/c/150/100/cfa/8d562cf13f6146d650f13bea1d5a6.jpg"/>
+            </description>
+            <link>
+                https://www.01net.com/actualites/une-faille-zero-day-dans-macos-permet-de-generer-de-faux-clics-malveillants-1705035.html
+            </link>
+            <pubDate>Tue, 04 Jun 2019 11:05:15 +0200</pubDate>
+            <guid isPermaLink="false">
+                https://www.01net.com/actualites/une-faille-zero-day-dans-macos-permet-de-generer-de-faux-clics-malveillants-1705035.html
+            </guid>
+            <enclosure url="https://img.bfmtv.com/i/0/0/cfa/8d562cf13f6146d650f13bea1d5a6.jpg" type="image/jpg" length="0"/>
+        </item>
+        <item>
+            <title>Facebook et Twitter ont mis fin à une campagne de désinformation iranienne</title>
+            <description>Les deux plates-formes ont désactivé des comptes qui usurpaient l’identité d’hommes politiques américains ou se faisaient passer pour des journalistes. Ce réseau véhiculait des messages pro-iraniens.  <br/>
+                <br/> 
+                <img src="https://img.bfmtv.com/c/150/100/9ef/667b9b21a406210a0e358d051a0c4.jpg"/>
+            </description>
+            <link>
+                https://www.01net.com/actualites/facebook-et-twitter-ont-mis-fin-a-une-campagne-de-desinformation-iranienne-1701658.html
+            </link>
+            <pubDate>Wed, 29 May 2019 11:42:02 +0200</pubDate>
+            <guid isPermaLink="false">
+                https://www.01net.com/actualites/facebook-et-twitter-ont-mis-fin-a-une-campagne-de-desinformation-iranienne-1701658.html
+            </guid>
+            <enclosure url="https://img.bfmtv.com/i/0/0/9ef/667b9b21a406210a0e358d051a0c4.jpg" type="image/jpg" length="232550"/>
+        </item>
+        <item>
+            <title>Un vieux PC portable bourré de malwares a été vendu 1,3 million de dollars</title>
+            <description>Pour matérialiser la dangerosité des attaques informatiques, un artiste a installé – avec l’aide de chercheurs en sécurité – six malwares particulièrement célèbres sur un netbook Samsung NC10.  <br/>
+                <br/> 
+                <img src="https://img.bfmtv.com/c/150/100/eaa/dbfd25dcdaafe4e8838f0c6fed246.jpg"/>
+            </description>
+            <link>
+                https://www.01net.com/actualites/un-vieux-pc-portable-bourre-de-malwares-a-ete-vendu-13-million-de-dollars-1700824.html
+            </link>
+            <pubDate>Tue, 28 May 2019 05:46:46 +0200</pubDate>
+            <guid isPermaLink="false">
+                https://www.01net.com/actualites/un-vieux-pc-portable-bourre-de-malwares-a-ete-vendu-13-million-de-dollars-1700824.html
+            </guid>
+            <enclosure url="https://img.bfmtv.com/i/0/0/eaa/dbfd25dcdaafe4e8838f0c6fed246.jpg" type="image/jpg" length="0"/>
+        </item>
+        <item>
+            <title>Près d’un million d’ordinateurs Windows vulnérables à la terrible faille BlueKeep</title>
+            <description>Les pirates qui arrivent à exploiter cette faille pourraient créer un dommage équivalent à celui de WannaCry ou NotPetya, voire pire. Certains acteurs malveillants semblent déjà tâter le terrain.  <br/>
+                <br/> 
+                <img src="https://img.bfmtv.com/c/150/100/578/7ed852adc47394d6ab56fdb6d637f.jpg"/>
+            </description>
+            <link>
+                https://www.01net.com/actualites/pres-d-un-million-d-ordinateurs-windows-vulnerables-a-la-terrible-faille-bluekeep-1700917.html
+            </link>
+            <pubDate>Tue, 28 May 2019 05:39:12 +0200</pubDate>
+            <guid isPermaLink="false">
+                https://www.01net.com/actualites/pres-d-un-million-d-ordinateurs-windows-vulnerables-a-la-terrible-faille-bluekeep-1700917.html
+            </guid>
+            <enclosure url="https://img.bfmtv.com/i/0/0/578/7ed852adc47394d6ab56fdb6d637f.jpg" type="image/jpg" length="0"/>
+        </item>
+        <item>
+            <title>Une faille zero-day dans macOS permet d’exécuter du code à distance</title>
+            <description>Grâce à la fonction de partage en réseau, il est possible de contourner la fonction GateKeeper, censée vérifier l’authenticité d’un logiciel téléchargé. Aucun patch n’est disponible pour l’instant.  <br/>
+                <br/> 
+                <img src="https://img.bfmtv.com/c/150/100/c08fe/bdf55be2ab97e4e5b84102c4f82.jpg"/>
+            </description>
+            <link>
+                https://www.01net.com/actualites/une-faille-zero-day-dans-macos-permet-d-executer-du-code-a-distance-1700648.html
+            </link>
+            <pubDate>Tue, 28 May 2019 11:33:54 +0200</pubDate>
+            <guid isPermaLink="false">
+                https://www.01net.com/actualites/une-faille-zero-day-dans-macos-permet-d-executer-du-code-a-distance-1700648.html
+            </guid>
+            <enclosure url="https://img.bfmtv.com/i/0/0/c08fe/bdf55be2ab97e4e5b84102c4f82.jpg" type="image/jpg" length="0"/>
+        </item>
+        <item>
+            <title>Windows 10 : Microsoft veut sécuriser le surf avec Chrome et Firefox... grâce à Edge</title>
+            <description>Quand un internaute sur Windows 10 est sur le point d’aller sur un site potentiellement malveillant, cette nouvelle extension de Microsoft ouvre un container Edge pour totalement protéger le système d’une éventuelle attaque.  <br/>
+                <br/> 
+                <img src="https://img.bfmtv.com/c/150/100/f7b/7d8eb7861f4cd6059dd24cee4e2b1.jpg"/>
+            </description>
+            <link>
+                https://www.01net.com/actualites/windows-10-microsoft-veut-securiser-le-surf-avec-chrome-et-firefox-grace-a-edge-1700082.html
+            </link>
+            <pubDate>Mon, 27 May 2019 12:56:35 +0200</pubDate>
+            <guid isPermaLink="false">
+                https://www.01net.com/actualites/windows-10-microsoft-veut-securiser-le-surf-avec-chrome-et-firefox-grace-a-edge-1700082.html
+            </guid>
+            <enclosure url="https://img.bfmtv.com/i/0/0/f7b/7d8eb7861f4cd6059dd24cee4e2b1.jpg" type="image/jpg" length="0"/>
+        </item>
+        <item>
+            <title>L’Allemagne veut pouvoir écouter les messageries instantanées</title>
+            <description>Un projet de loi prévoit la fourniture d’un accès au contenu déchiffré sur demande des forces de l’ordre et après décision d’un juge.  <br/>
+                <br/> 
+                <img src="https://img.bfmtv.com/c/150/100/97a/6d22d6323387429a4f3aa9278bcb2.jpg"/>
+            </description>
+            <link>
+                https://www.01net.com/actualites/l-allemagne-veut-pouvoir-ecouter-les-messageries-instantanees-1700002.html
+            </link>
+            <pubDate>Mon, 27 May 2019 12:02:38 +0200</pubDate>
+            <guid isPermaLink="false">
+                https://www.01net.com/actualites/l-allemagne-veut-pouvoir-ecouter-les-messageries-instantanees-1700002.html
+            </guid>
+            <enclosure url="https://img.bfmtv.com/i/0/0/97a/6d22d6323387429a4f3aa9278bcb2.jpg" type="image/jpg" length="0"/>
+        </item>
+        <item>
+            <title>Facebook a supprimé 2,2 milliards de faux comptes au premier trimestre 2019</title>
+            <description>La plate-forme estime qu’environ 5% des comptes actifs seraient faux. Un chiffre en augmentation.  <br/>
+                <br/> 
+                <img src="https://img.bfmtv.com/c/150/100/282/ef4bc2ccdf5351706fbb7e030324b.jpeg"/>
+            </description>
+            <link>
+                https://www.01net.com/actualites/facebook-a-supprime-22-milliards-de-faux-comptes-au-premier-trimestre-2019-1698015.html
+            </link>
+            <pubDate>Fri, 24 May 2019 11:39:08 +0200</pubDate>
+            <guid isPermaLink="false">
+                https://www.01net.com/actualites/facebook-a-supprime-22-milliards-de-faux-comptes-au-premier-trimestre-2019-1698015.html
+            </guid>
+            <enclosure url="https://img.bfmtv.com/i/0/0/282/ef4bc2ccdf5351706fbb7e030324b.jpeg" type="image/jpg" length="0"/>
+        </item>
+        <item>
+            <title>Windows 10 : quatre failles zero-day publiées en quelques jours sur le web</title>
+            <description>Trois vulnérabilités permettent l’élévation de privilèges et une autre de contourner l’isolation d’un bac à sable dans Internet Explorer 11. Aucun patch n’est disponible pour le moment.  <br/>
+                <br/> 
+                <img src="https://img.bfmtv.com/c/150/100/631/d92055431fea08b2fc52e58b6bead.jpg"/>
+            </description>
+            <link>
+                https://www.01net.com/actualites/windows-10-quatre-failles-zero-day-publiees-en-quelques-jours-sur-le-web-1697997.html
+            </link>
+            <pubDate>Fri, 24 May 2019 10:18:27 +0200</pubDate>
+            <guid isPermaLink="false">
+                https://www.01net.com/actualites/windows-10-quatre-failles-zero-day-publiees-en-quelques-jours-sur-le-web-1697997.html
+            </guid>
+            <enclosure url="https://img.bfmtv.com/i/0/0/631/d92055431fea08b2fc52e58b6bead.jpg" type="image/jpg" length="0"/>
+        </item>
+        <item>
+            <title>Apple veut rendre les publicités en ligne plus respectueuses de la vie privée</title>
+            <description>L’Américain annonce une nouvelle technologie Web intégrée aux navigateurs qui empêchera les annonceurs d'identifier les internautes et de suivre leurs achats en temps réel.  <br/>
+                <br/> 
+                <img src="https://img.bfmtv.com/c/150/100/f016a/c410a6e04d16ce2f24617a216ef.jpeg"/>
+            </description>
+            <link>
+                https://www.01net.com/actualites/apple-veut-rendre-les-publicites-en-ligne-plus-respectueuses-de-la-vie-privee-1697266.html
+            </link>
+            <pubDate>Thu, 23 May 2019 11:33:12 +0200</pubDate>
+            <guid isPermaLink="false">
+                https://www.01net.com/actualites/apple-veut-rendre-les-publicites-en-ligne-plus-respectueuses-de-la-vie-privee-1697266.html
+            </guid>
+            <enclosure url="https://img.bfmtv.com/i/0/0/f016a/c410a6e04d16ce2f24617a216ef.jpeg" type="image/jpg" length="0"/>
+        </item>
+        <item>
+            <title>Android : la première version stable de Tor Browser est disponible</title>
+            <description>D’après les développeurs, cette version mobile fournit « essentiellement les mêmes protections » que la version pour poste de travail, même si toutes les fonctionnalités ne sont pas encore disponibles.  <br/>
+                <br/> 
+                <img src="https://img.bfmtv.com/c/150/100/c26/dfbc11da3b9c72d370f98f997281d.jpg"/>
+            </description>
+            <link>
+                https://www.01net.com/actualites/android-la-premiere-version-stable-de-tor-browser-est-disponible-1696900.html
+            </link>
+            <pubDate>Wed, 22 May 2019 06:32:50 +0200</pubDate>
+            <guid isPermaLink="false">
+                https://www.01net.com/actualites/android-la-premiere-version-stable-de-tor-browser-est-disponible-1696900.html
+            </guid>
+            <enclosure url="https://img.bfmtv.com/i/0/0/c26/dfbc11da3b9c72d370f98f997281d.jpg" type="image/jpg" length="0"/>
+        </item>
+        <item>
+            <title>Windows 10 : une faille zero-day révélée de manière sauvage sur le Web</title>
+            <description>Un bug dans la gestion des tâches permet d’obtenir les privilèges d’administrateur. Le code de l’attaque peut être téléchargé sur GitHub. Malheureusement, aucun patch n’est disponible.  <br/>
+                <br/> 
+                <img src="https://img.bfmtv.com/c/150/100/44e/09288aad02fa96f113359beed627d.jpg"/>
+            </description>
+            <link>
+                https://www.01net.com/actualites/windows-10-une-faille-zero-day-revelee-de-maniere-sauvage-sur-le-web-1696586.html
+            </link>
+            <pubDate>Wed, 22 May 2019 10:59:35 +0200</pubDate>
+            <guid isPermaLink="false">
+                https://www.01net.com/actualites/windows-10-une-faille-zero-day-revelee-de-maniere-sauvage-sur-le-web-1696586.html
+            </guid>
+            <enclosure url="https://img.bfmtv.com/i/0/0/44e/09288aad02fa96f113359beed627d.jpg" type="image/jpg" length="0"/>
+        </item>
+        <item>
+            <title>L’Europe veut diminuer la sécurité de la 5G pour faciliter votre surveillance</title>
+            <description>Décentralisés et dotés de puissants mécanismes d’authentification, les futurs réseaux 5G donnent du fil à retordre aux forces de l’ordre. Un rapport du Conseil de l’Union européenne préconise d’imposer aux opérateurs une série de contraintes techniques et juridiques.  <br/>
+                <br/> 
+                <img src="https://img.bfmtv.com/c/150/100/9e2/2227844e9b48339977a6efd972c54.jpg"/>
+            </description>
+            <link>
+                https://www.01net.com/actualites/l-europe-veut-diminuer-la-securite-de-la-5g-pour-faciliter-votre-surveillance-1696060.html
+            </link>
+            <pubDate>Tue, 21 May 2019 06:29:46 +0200</pubDate>
+            <guid isPermaLink="false">
+                https://www.01net.com/actualites/l-europe-veut-diminuer-la-securite-de-la-5g-pour-faciliter-votre-surveillance-1696060.html
+            </guid>
+            <enclosure url="https://img.bfmtv.com/i/0/0/9e2/2227844e9b48339977a6efd972c54.jpg" type="image/jpg" length="0"/>
+        </item>
+        <item>
+            <title>Certains Macs ne seront jamais protégés contre les nouvelles failles Intel</title>
+            <description>Intel a décidé de ne pas patcher tous les processeurs contre les failles ZombieLoad et consorts. Côté Apple, cela concerne treize modèles d’ordinateurs, dont des MacBook Pro et des iMac.    <br/>
+                <br/> 
+                <img src="https://img.bfmtv.com/c/150/100/dc5/3cc61852dd62b71d32c0b211fd932.jpg"/>
+            </description>
+            <link>
+                https://www.01net.com/actualites/certains-macs-ne-seront-jamais-proteges-contre-les-nouvelles-failles-intel-1693775.html
+            </link>
+            <pubDate>Fri, 17 May 2019 03:32:09 +0200</pubDate>
+            <guid isPermaLink="false">
+                https://www.01net.com/actualites/certains-macs-ne-seront-jamais-proteges-contre-les-nouvelles-failles-intel-1693775.html
+            </guid>
+            <enclosure url="https://img.bfmtv.com/i/0/0/dc5/3cc61852dd62b71d32c0b211fd932.jpg" type="image/jpg" length="0"/>
+        </item>
+        <item>
+            <title>Google va remplacer certaines de ses clés de sécurité Titan... à cause d'une faille</title>
+            <description>Un bug dans le protocole Bluetooth Low Energy pourrait permettre à un attaquant d’accéder au compte Google d’un utilisateur ou de pirater son terminal de connexion.  <br/>
+                <br/> 
+                <img src="https://img.bfmtv.com/c/150/100/9f3/58de68287fa3f5de708aa1391627d.jpg"/>
+            </description>
+            <link>
+                https://www.01net.com/actualites/google-va-remplacer-certaines-de-ses-cles-de-securite-titan-a-cause-d-une-faille-1692906.html
+            </link>
+            <pubDate>Thu, 16 May 2019 05:14:27 +0200</pubDate>
+            <guid isPermaLink="false">
+                https://www.01net.com/actualites/google-va-remplacer-certaines-de-ses-cles-de-securite-titan-a-cause-d-une-faille-1692906.html
+            </guid>
+            <enclosure url="https://img.bfmtv.com/i/0/0/9f3/58de68287fa3f5de708aa1391627d.jpg" type="image/jpg" length="0"/>
+        </item>
+        <item>
+            <title>Intel victime de nouvelles failles critiques dans l'ensemble de ses processeurs</title>
+            <description>Les attaques « ZombiLoad », « Fallout » et « Ridl » permettent d’accéder aux données traitées par un puce Intel indépendamment des privilèges d’accès. Et donc d’exfiltrer des informations sensibles.  <br/>
+                <br/> 
+                <img src="https://img.bfmtv.com/c/150/100/baf/e3d56f558772c14c8210b9cc9aec1.jpg"/>
+            </description>
+            <link>
+                https://www.01net.com/actualites/intel-victime-de-nouvelles-failles-critiques-dans-l-ensemble-de-ses-processeurs-1692205.html
+            </link>
+            <pubDate>Thu, 16 May 2019 12:53:31 +0200</pubDate>
+            <guid isPermaLink="false">
+                https://www.01net.com/actualites/intel-victime-de-nouvelles-failles-critiques-dans-l-ensemble-de-ses-processeurs-1692205.html
+            </guid>
+            <enclosure url="https://img.bfmtv.com/i/0/0/baf/e3d56f558772c14c8210b9cc9aec1.jpg" type="image/jpg" length="0"/>
+        </item>
+        <item>
+            <title>Une faille ultra-critique frappe Windows 7 et Windows XP</title>
+            <description>Un bug dans le protocole Remote Desktop Protocol permet de pirater automatiquement et à distance ces deux systèmes. Autrement dit, il permet de créer des vers. Il est urgent de mettre à jour les systèmes.  <br/>
+                <br/> 
+                <img src="https://img.bfmtv.com/c/150/100/424/845f4d2dbbf1f597ba18dcd4e2560.jpg"/>
+            </description>
+            <link>
+                https://www.01net.com/actualites/une-faille-ultra-critique-frappe-windows-7-et-windows-xp-1692836.html
+            </link>
+            <pubDate>Thu, 16 May 2019 10:37:39 +0200</pubDate>
+            <guid isPermaLink="false">
+                https://www.01net.com/actualites/une-faille-ultra-critique-frappe-windows-7-et-windows-xp-1692836.html
+            </guid>
+            <enclosure url="https://img.bfmtv.com/i/0/0/424/845f4d2dbbf1f597ba18dcd4e2560.jpg" type="image/jpg" length="0"/>
+        </item>
+        <item>
+            <title>On connaît désormais les noms des trois éditeurs antivirus dont le code source aurait été volé</title>
+            <description>D’après des messages échangés avec les pirates, ces derniers affirment détenir les codes source des logiciels de Symantec, McAfee et Trend Micro. Reste à savoir quel est le niveau de vérité de ces propos.  <br/>
+                <br/> 
+                <img src="https://img.bfmtv.com/c/150/100/7f4/fc3e0636730fe11d3258401517668.jpg"/>
+            </description>
+            <link>
+                https://www.01net.com/actualites/codes-source-voles-on-connait-les-noms-des-trois-editeurs-antivirus-impactes-1691489.html
+            </link>
+            <pubDate>Tue, 14 May 2019 03:18:51 +0200</pubDate>
+            <guid isPermaLink="false">
+                https://www.01net.com/actualites/codes-source-voles-on-connait-les-noms-des-trois-editeurs-antivirus-impactes-1691489.html
+            </guid>
+            <enclosure url="https://img.bfmtv.com/i/0/0/7f4/fc3e0636730fe11d3258401517668.jpg" type="image/jpg" length="0"/>
+        </item>
+        <item>
+            <title>Twitter a partagé par erreur les données confidentielles de certains utilisateurs</title>
+            <description>La géolocalisation d’utilisateurs iOS a été envoyée à un partenaire du réseau social. Si les conditions du bug semblent limitées, il n’empêche que Twitter a préféré avouer sa faute.  <br/>
+                <br/> 
+                <img src="https://img.bfmtv.com/c/150/100/4e5/caec4555bb4efe71fc361eb0cb365.jpeg"/>
+            </description>
+            <link>
+                https://www.01net.com/actualites/twitter-a-partage-par-erreur-les-donnees-confidentielles-de-certains-utilisateurs-1691347.html
+            </link>
+            <pubDate>Tue, 14 May 2019 02:19:19 +0200</pubDate>
+            <guid isPermaLink="false">
+                https://www.01net.com/actualites/twitter-a-partage-par-erreur-les-donnees-confidentielles-de-certains-utilisateurs-1691347.html
+            </guid>
+            <enclosure url="https://img.bfmtv.com/i/0/0/4e5/caec4555bb4efe71fc361eb0cb365.jpeg" type="image/jpg" length="0"/>
+        </item>
+        <item>
+            <title>Une faille dans WhatsApp a été utilisée pour espionner des smartphones à distance</title>
+            <description>Il suffisait d’initier un appel VoIP pour provoquer l’installation de Pegasus, un logiciel d’espionnage particulièrement efficace, utilisé par les gouvernements et les forces de l’ordre dans le monde entier. Une mise à jour de la messagerie est disponible.  <br/>
+                <br/> 
+                <img src="https://img.bfmtv.com/c/150/100/5a3/b9ae171022d7c3323af0ec92428fd.jpg"/>
+            </description>
+            <link>
+                https://www.01net.com/actualites/une-faille-dans-whatsapp-a-ete-utilisee-pour-espionner-des-smartphones-a-distance-1691316.html
+            </link>
+            <pubDate>Tue, 14 May 2019 12:17:29 +0200</pubDate>
+            <guid isPermaLink="false">
+                https://www.01net.com/actualites/une-faille-dans-whatsapp-a-ete-utilisee-pour-espionner-des-smartphones-a-distance-1691316.html
+            </guid>
+            <enclosure url="https://img.bfmtv.com/i/0/0/5a3/b9ae171022d7c3323af0ec92428fd.jpg" type="image/jpg" length="0"/>
+        </item>
+        <item>
+            <title>WannaCry : deux ans après, plus d’un million de PC toujours vulnérables</title>
+            <description>Le ransomware et ses dérivés continuent de se propager sur la Toile car le correctif de Microsoft n’a toujours pas été installé sur tous les systèmes.    <br/>
+                <br/> 
+                <img src="https://img.bfmtv.com/c/150/100/323/1bb0504c6bcfbd8d8fcf1ab7cdfb4.jpg"/>
+            </description>
+            <link>
+                https://www.01net.com/actualites/wannacry-deux-ans-apres-plus-d-un-million-de-pc-toujours-vulnerables-1690683.html
+            </link>
+            <pubDate>Mon, 13 May 2019 11:29:44 +0200</pubDate>
+            <guid isPermaLink="false">
+                https://www.01net.com/actualites/wannacry-deux-ans-apres-plus-d-un-million-de-pc-toujours-vulnerables-1690683.html
+            </guid>
+            <enclosure url="https://img.bfmtv.com/i/0/0/323/1bb0504c6bcfbd8d8fcf1ab7cdfb4.jpg" type="image/jpg" length="0"/>
+        </item>
+        <item>
+            <title>Comment échapper aux trackers publicitaires... du métro</title>
+            <description>Des capteurs d’audience commencent à être déployés au niveau des écrans publicitaires du métro parisien. Ils utilisent la récolte d’adresses MAC. 01net.com fait le point sur le fonctionnement de ce dispositif et sur la manière de l’éviter.  <br/>
+                <br/> 
+                <img src="https://img.bfmtv.com/c/150/100/583/9f6c1c247912686ff0535fbe86e64.jpg"/>
+            </description>
+            <link>
+                https://www.01net.com/actualites/comment-echapper-aux-trackers-publicitaires-du-metro-1675918.html
+            </link>
+            <pubDate>Sun, 12 May 2019 03:13:56 +0200</pubDate>
+            <guid isPermaLink="false">
+                https://www.01net.com/actualites/comment-echapper-aux-trackers-publicitaires-du-metro-1675918.html
+            </guid>
+            <enclosure url="https://img.bfmtv.com/i/0/0/583/9f6c1c247912686ff0535fbe86e64.jpg" type="image/jpg" length="0"/>
+        </item>
+    </channel>
+</rss>
