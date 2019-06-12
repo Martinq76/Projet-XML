@@ -49,15 +49,15 @@ $XmlTechnos = "https://www.01net.com/rss/actualites/technos/";
                         echo 'red';
                     endif; ?>">
         <div class="nav-wrapper">
-            <a href="#" class="brand-logo toto">Logoo</a>
+            <a href="index.php" class="brand-logo toto">Logoo</a>
             <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
             <ul class="right hide-on-med-and-down">
                 <li><a href="securite">Sécurité</a></li>
                 <li><a href="applis">Application</a></li>
                 <li><a href="technos">Technos</a></li>
                 <li><?= $_COOKIE['firstName'] ?></li>
-                <li>  <a class="waves-effect waves-light btn modal-trigger" href="#inscription">Inscription</a></li>
-                <li><a href="parametres"><i class="material-icons"> settings</i></a></li>
+                <li> <a class="waves-effect waves-light btn modal-trigger" href="#inscription">Inscription</a></li>
+                <li><a href="#parametres" class="modal-trigger"><i class="material-icons"> settings</i></a></li>
             </ul>
         </div>
     </nav>
@@ -66,84 +66,245 @@ $XmlTechnos = "https://www.01net.com/rss/actualites/technos/";
         <li><a href="applis">Application</a></li>
         <li><a href="technos">Technos</a></li>
         <li><?= $_GET['firstName'] ?></li>
-        <li><a href="deconnexion">Déconnexion</a></li>
-        <li><a href="parametres"><i class="material-icons"> settings</i></a></li>
+        <li><a class="waves-effect waves-light btn modal-trigger" href="#inscription">Inscription</a></li>
+        <li><a href="#parametres" class="modal-trigger"><i class="material-icons"> settings</i></a></li>
     </ul>
 
     <div id="inscription" class="modal">
-    <div class="modal-content">
-      <h4>Inscription</h4>
-      <form method="get" action="index.php">
-        <p><label>Votre nom : </label><input type="text" name="lastName" required /></p>
-        <p><label>Votre prénom : </label><input type="text" name="firstName" required /></p>
-        <p>
-            <label> Quelle est votre couleur préféré ?</label>
-        </p>
-        <p>
-            <input class="with-gap" name="choiceColor" value="black" type="radio" checked />
-            <span class="">Noir</span>
-        </p>
-        <p>
-            <label>
-                <input class="with-gap" name="choiceColor" value="blue" type="radio" />
-                <span class="cyan-text darken-2">Bleu</span>
-            </label>
-        </p>
-        <p>
-            <label>
-                <input class="with-gap" name="choiceColor" value="red" type="radio" />
-                <span class="red-text darken-4">Rouge</span>
-            </label>
-        </p>
-        <p>
-            <label> Nombre d'articles affiché par sujet sur la page d'accueil: </label>
-        </p>
-        <p>
-            <input class="with-gap" name="articleNumber" value="3" type="radio" checked />
-            <span>3</span>
+        <div class="modal-content">
+            <h4>Inscription</h4>
+            <form method="get" action="index.php">
+                <p><label>Votre nom : </label><input type="text" name="lastName" required /></p>
+                <p><label>Votre prénom : </label><input type="text" name="firstName" required /></p>
+                <p>
+                    <label> Quelle est votre couleur préféré ?</label>
+                </p>
+                <p>
+                    <input class="with-gap" name="choiceColor" value="black" type="radio" checked />
+                    <span class="">Noir</span>
+                </p>
+                <p>
+                    <label>
+                        <input class="with-gap" name="choiceColor" value="blue" type="radio" />
+                        <span class="cyan-text darken-2">Bleu</span>
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        <input class="with-gap" name="choiceColor" value="red" type="radio" />
+                        <span class="red-text darken-4">Rouge</span>
+                    </label>
+                </p>
+                <p>
+                    <label> Nombre d'articles affiché par sujet sur la page d'accueil: </label>
+                </p>
+                <p>
+                    <input class="with-gap" name="articleNumber" value="3" type="radio" checked />
+                    <span>3</span>
 
-        </p>
-        <p>
-            <label>
-                <input class="with-gap" name="articleNumber" value="5" type="radio" />
-                <span>5</span>
-            </label>
-        </p>
-        <p>
-            <label>
-                <input class="with-gap" name="articleNumber" value="8" type="radio" />
-                <span>8</span>
-            </label>
-        </p>
-        <input type="submit" value="Valider" />
-    </form>
+                </p>
+                <p>
+                    <label>
+                        <input class="with-gap" name="articleNumber" value="5" type="radio" />
+                        <span>5</span>
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        <input class="with-gap" name="articleNumber" value="8" type="radio" />
+                        <span>8</span>
+                    </label>
+                </p>
+                <input type="submit" value="Valider" />
+            </form>
+        </div>
+        <div class="modal-footer">
+            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Fermer</a>
+        </div>
     </div>
-    <div class="modal-footer">
-      <a href="#!" class="modal-close waves-effect waves-green btn-flat">Fermer</a>
-    </div>
+
+    <div id="parametres" class="modal">
+        <div class="modal-content">
+            <h4>Paramètres</h4>
+            <form method="get" action="index.php">
+                <label> Quelle est votre couleur préféré ?</label>
+                </p>
+                <p>
+                    <input class="with-gap" name="choiceColo" value="black" type="radio" checked />
+                    <span class="">Noir</span>
+                </p>
+                <p>
+                    <label>
+                        <input class="with-gap" name="choiceColo" value="blue" type="radio" />
+                        <span class="cyan-text darken-2">Bleu</span>
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        <input class="with-gap" name="choiceColo" value="red" type="radio" />
+                        <span class="red-text darken-4">Rouge</span>
+                    </label>
+                </p>
+                <p>
+                    <label> Nombre d'articles affiché par sujet sur la page d'accueil: </label>
+                </p>
+                <p>
+                    <input class="with-gap" name="articleNumber" value="3" type="radio" checked />
+                    <span>3</span>
+
+                </p>
+                <p>
+                    <label>
+                        <input class="with-gap" name="articleNumber" value="5" type="radio" />
+                        <span>5</span>
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        <input class="with-gap" name="articleNumber" value="8" type="radio" />
+                        <span>8</span>
+                    </label>
+                </p>
+                <input type="submit" value="Valider" />
+            </form>
+        </div>
+        <div class="modal-footer">
+            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Déconnexion</a>
+        </div>
     </div>
 
     <?php
-    if (isset($_GET['page']) && $_GET['page'] == 'securite'):
-        echo $RssSecurite->channel->item[1]->title;
-    elseif (isset($_GET['page']) && $_GET['page'] == 'applis'):
-        echo $RssApplisLogiciels->channel->item[0]->title;
-    elseif (isset($_GET['page']) && $_GET['page'] == 'technos'):
-        echo $RssTechnos->channel->item[0]->title;
+    if (isset($_GET['page']) && $_GET['page'] == 'securite'): ?>
+    <div class="row">
+        <?php
+                    for ($i = 0; $i <= 29; $i++):
+                        ?>
+
+        <div class="col s12 m4">
+            <div class="card">
+                <div class="card-image">
+                    <img src="<?= $RssSecurite->channel->item[$i]->enclosure{'url'} ?>" alt="" width="50" height="250">
+                    <span class="card-title"
+                        style="color: <?= $_COOKIE['choiceColor']; ?>"><?= $RssSecurite->channel->item[$i]->title ?></span>
+                </div>
+                <div class="card-content">
+                    <p> <?= $RssSecurite->channel->item[$i]->pubDate ?> </p>
+                </div>
+                <div class="card-action">
+                    <a class="waves-effect waves-light btn modal-trigger"
+                        href="<?= $RssSecurite->channel->item[$i]->link ?>">Lien vers l'article</a>
+                    <a class="waves-effect waves-light btn modal-trigger"
+                        href="#descriptionCategorie1<?= $i ?>">Description</a>
+                    <div id="descriptionCategorie1<?= $i ?>" class="modal">
+                        <div class="modal-content">
+                            <h4>Description</h4>
+                            <p><?= $RssSecurite->channel->item[$i]->description ?></p>
+                        </div>
+                        <div class="modal-footer">
+                            <a href="<?= $RssSecurite->channel->item[$i]->link ?>"
+                                class="modal-close waves-effect waves-green btn-flat">Lien vers l'article</a>
+                            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Fermer</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <?php endfor; ?>
+    </div>
+    <?php 
+    elseif (isset($_GET['page']) && $_GET['page'] == 'applis'): ?>
+    <div class="row">
+        <?php
+        for ($i = 0; $i <= 30; $i++): ?>
+
+        <div class="col s12 m4">
+            <div class="card">
+                <div class="card-image">
+                    <img src="<?= $RssApplisLogiciels->channel->item[$i]->enclosure{'url'} ?>" alt="" width="50"
+                        height="250">
+                    <span class="card-title"
+                        style="color: <?= $_COOKIE['choiceColor']; ?>"><?= $RssApplisLogiciels->channel->item[$i]->title ?></span>
+                </div>
+                <div class="card-content">
+                    <p> <?= $RssApplisLogiciels->channel->item[$i]->pubDate ?> </p>
+                </div>
+                <div class="card-action">
+                    <a class="waves-effect waves-light btn modal-trigger"
+                        href="<?= $RssApplisLogiciels->channel->item[$i]->link ?>">Lien vers l'article</a>
+                    <a class="waves-effect waves-light btn modal-trigger"
+                        href="#descriptionCategorie2<?= $i ?>">Description</a>
+                    <div id="descriptionCategorie2<?= $i ?>" class="modal">
+                        <div class="modal-content">
+                            <h4>Description</h4>
+                            <p><?= $RssApplisLogiciels->channel->item[$i]->description ?></p>
+                        </div>
+                        <div class="modal-footer">
+                            <a href="<?= $RssApplisLogiciels->channel->item[$i]->link ?>"
+                                class="modal-close waves-effect waves-green btn-flat">Lien vers l'article</a>
+                            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Fermer</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <?php
+        endfor; ?>
+    </div>
+    <?php
+    elseif (isset($_GET['page']) && $_GET['page'] == 'technos'): ?>
+    <div class="row">
+        <?php
+                            for ($i = 0; $i <= 29; $i++):
+                                ?>
+
+        <div class="col s12 m4">
+            <div class="card">
+                <div class="card-image">
+                    <img src="<?= $RssTechnos->channel->item[$i]->enclosure{'url'} ?>" alt="" width="50" height="250">
+                    <span class="card-title"
+                        style="color: <?= $_COOKIE['choiceColor']; ?>"><?= $RssTechnos->channel->item[$i]->title ?></span>
+                </div>
+                <div class="card-content">
+                    <p> <?= $RssTechnos->channel->item[$i]->pubDate ?> </p>
+                </div>
+                <div class="card-action">
+                    <a class="waves-effect waves-light btn modal-trigger"
+                        href="<?= $RssTechnos->channel->item[$i]->link ?>">Lien vers l'article</a>
+                    <a class="waves-effect waves-light btn modal-trigger"
+                        href="#descriptionCategorie3<?= $i ?>">Description</a>
+                    <div id="descriptionCategorie3<?= $i ?>" class="modal">
+                        <div class="modal-content">
+                            <h4>Description</h4>
+                            <p><?= $RssTechnos->channel->item[$i]->description ?></p>
+                        </div>
+                        <div class="modal-footer">
+                            <a href="<?= $RssTechnos->channel->item[$i]->link ?>"
+                                class="modal-close waves-effect waves-green btn-flat">Lien vers l'article</a>
+                            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Fermer</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <?php endfor; ?>
+    </div>
+    <?php
     endif;
 
     if (!empty($loginUtili) && !empty($mdpUtili) && !empty($choiceColor) && !empty($articleNumber)): ?>
-        <div class="row">
-            <div class="col m4">
-                <h1 class="titleHome" style="color: <?= $choiceColor ?>"><b><u>Sécurité</u></b></h1>
-            </div>
-            <div class="col m4">
-                <h1 class="titleHome" style="color: <?= $choiceColor ?>"><b><u>Applis/Logiciels</u></b></h1>
-            </div>
-            <div class="col m4">
-                <h1 class="titleHome" style="color: <?= $choiceColor ?>"><b><u>Technos</u></b></h1>
-            </div>
+    <div class="row">
+        <div class="col m4">
+            <h1 class="titleHome" style="color: <?= $choiceColor ?>"><b><u>Sécurité</u></b></h1>
         </div>
+        <div class="col m4">
+            <h1 class="titleHome" style="color: <?= $choiceColor ?>"><b><u>Applis/Logiciels</u></b></h1>
+        </div>
+        <div class="col m4">
+            <h1 class="titleHome" style="color: <?= $choiceColor ?>"><b><u>Technos</u></b></h1>
+        </div>
+    </div>
     <?php
     for ($i = 0; $i < $_GET['articleNumber']; $i++): 
     setlocale (LC_TIME, 'fr_FR.utf8','fra'); ?>
@@ -158,8 +319,8 @@ $XmlTechnos = "https://www.01net.com/rss/actualites/technos/";
                 <a class="waves-effect waves-light btn modal-trigger"
                     href="<?= $RssSecurite->channel->item[$i]->link ?>">Lien</a>
 
-                <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Description</a>
-                <div id="modal1" class="modal">
+                <a class="waves-effect waves-light btn modal-trigger" href="#modalHomeCol1<?= $i ?>">Description</a>
+                <div id="modalHomeCol1<?= $i ?>" class="modal">
                     <div class="modal-content">
                         <h4>Description</h4>
                         <p><?= $RssSecurite->channel->item[$i]->description ?></p>
@@ -183,8 +344,8 @@ $XmlTechnos = "https://www.01net.com/rss/actualites/technos/";
                 <?= $RssApplisLogiciels->channel->item[$i]->pubDate ?> <br>
                 <a class="waves-effect waves-light btn modal-trigger"
                     href="<?= $RssApplisLogiciels->channel->item[$i]->link ?>">Lien</a>
-                <a class="waves-effect waves-light btn modal-trigger" href="#modal2">Description</a>
-                <div id="modal2" class="modal">
+                <a class="waves-effect waves-light btn modal-trigger" href="#modalHomeCol2<?= $i ?>">Description</a>
+                <div id="modalHomeCol2<?= $i ?>" class="modal">
                     <div class="modal-content">
                         <h4>Description</h4>
                         <p><?= $RssApplisLogiciels->channel->item[$i]->description ?></p>
@@ -206,8 +367,8 @@ $XmlTechnos = "https://www.01net.com/rss/actualites/technos/";
                 <?= $RssTechnos->channel->item[$i]->pubDate ?> <br>
                 <a class="waves-effect waves-light btn modal-trigger"
                     href="<?= $RssTechnos->channel->item[$i]->link ?>">Lien</a>
-                <a class="waves-effect waves-light btn modal-trigger" href="#modal3">Description</a>
-                <div id="modal3" class="modal">
+                <a class="waves-effect waves-light btn modal-trigger" href="#modalHomeCol3<?= $i ?>">Description</a>
+                <div id="modalHomeCol3<?= $i ?>" class="modal">
                     <div class="modal-content">
                         <h4>Description</h4>
                         <p><?= $RssTechnos->channel->item[$i]->description ?></p>
