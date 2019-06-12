@@ -1,0 +1,10 @@
+
+Options +FollowSymlinks
+RewriteEngine On
+RewriteRule ^securite$ index.php?page=securite [L]
+RewriteRule ^applis$ index.php?page=applis [L]
+RewriteRule ^technos$ index.php?page=technos [L]
+RewriteRule ^deconnexion$ index.php?page=deconnexion [L]
+RewriteRule ^parametres$ index.php?page=parametres [L]
+
+ErrorDocument 404 /404.php
