@@ -45,12 +45,12 @@ function dateFr($date) {
         $RssTechnos = simplexml_load_file($XmlTechnos);
         ?>
         <nav class="<?php
-        if ($_COOKIE['choiceColor'] == 'black'):
+        if ($_COOKIE['choiceColor'] == '#353535'):
             echo 'black';
-        elseif ($_COOKIE['choiceColor'] == 'blue'):
-            echo 'blue';
-        elseif ($_COOKIE['choiceColor'] == 'red'):
-            echo 'red';
+        elseif ($_COOKIE['choiceColor'] == '#64b5f6'):
+            echo 'cyan darken-3';
+        elseif ($_COOKIE['choiceColor'] == '#ef5350'):
+            echo 'red darken-2';
         elseif (count($_COOKIE) == 0):
             echo 'red';
         endif;
@@ -62,8 +62,8 @@ function dateFr($date) {
                     <li><a href="securite">Sécurité</a></li>
                     <li><a href="applis">Application</a></li>
                     <li><a href="technos">Technos</a></li>
-                    <li><?= $_COOKIE['firstName'] ?></li>
-                    <li><a class="waves-effect waves-light btn modal-trigger" href="#inscription">Inscription</a></li>
+                    <li style="font-weight:bold; font-size:1.5rem; color:#616161">Bonjour <?= $_COOKIE['firstName'] ?></li>
+                    <li><a class="waves-effect grey lighten-5 btn modal-trigger" style="color:black" href="#inscription">Inscription</a></li>
                     <li><a href="deconnexion">Déconnexion</a></li>
                     <li><a href="#parametres" class="modal-trigger"><i class="material-icons"> settings</i></a></li>
                 </ul>
@@ -89,18 +89,18 @@ function dateFr($date) {
                         <label> Quelle est votre couleur préféré ?</label>
                     </p>
                     <p>
-                        <input class="with-gap" name="choiceColor" value="black" type="radio" checked />
+                        <input class="with-gap" name="choiceColor" value="#353535" type="radio" checked />
                         <span class="">Noir</span>
                     </p>
                     <p>
                         <label>
-                            <input class="with-gap" name="choiceColor" value="blue" type="radio" />
+                            <input class="with-gap" name="choiceColor" value="#64b5f6" type="radio" />
                             <span class="cyan-text darken-2">Bleu</span>
                         </label>
                     </p>
                     <p>
                         <label>
-                            <input class="with-gap" name="choiceColor" value="red" type="radio" />
+                            <input class="with-gap" name="choiceColor" value="#ef5350" type="radio" />
                             <span class="red-text darken-4">Rouge</span>
                         </label>
                     </p>
@@ -139,18 +139,18 @@ function dateFr($date) {
                     <label> Quelle est votre couleur préféré ?</label>
                     </p>
                     <p>
-                        <input class="with-gap" name="choiceColor" value="black" type="radio" checked />
+                        <input class="with-gap" name="choiceColor" value="#353535" type="radio" checked />
                         <span class="">Noir</span>
                     </p>
                     <p>
                         <label>
-                            <input class="with-gap" name="choiceColor" value="blue" type="radio" />
+                            <input class="with-gap" name="choiceColor" value="#64b5f6" type="radio" />
                             <span class="cyan-text darken-2">Bleu</span>
                         </label>
                     </p>
                     <p>
                         <label>
-                            <input class="with-gap" name="choiceColor" value="red" type="radio" />
+                            <input class="with-gap" name="choiceColor" value="#ef5350" type="radio" />
                             <span class="red-text darken-4">Rouge</span>
                         </label>
                     </p>
@@ -192,15 +192,16 @@ function dateFr($date) {
                             <div class="card-image">
                                 <img src="<?= $RssSecurite->channel->item[$i]->enclosure{'url'} ?>" alt="" width="50" height="250">
                                 <span class="card-title"
-                                      style="color: <?= $_COOKIE['choiceColor']; ?>"><?= $RssSecurite->channel->item[$i]->title ?></span>
+                                      style="font-weight: bold; color: <?= $_COOKIE['choiceColor']; ?> ;text-shadow: -1px 0 white, 0 1px white,
+                                              1px 0 white, 0 -1px white"><?= $RssSecurite->channel->item[$i]->title ?></span>
                             </div>
                             <div class="card-content">
                                 <p> <?= dateFr($RssSecurite->channel->item[$i]->pubDate) ?> </p>
                             </div>
                             <div class="card-action">
-                                <a class="waves-effect waves-light btn modal-trigger"
+                                <a class="waves-effect btn modal-trigger" style="background-color: <?= $_COOKIE['choiceColor']; ?>"
                                    href="<?= $RssSecurite->channel->item[$i]->link ?>">Lien vers l'article</a>
-                                <a class="waves-effect waves-light btn modal-trigger"
+                                <a class="waves-effect btn modal-trigger" style="background-color: <?= $_COOKIE['choiceColor']; ?>"
                                    href="#descriptionCategorie1<?= $i ?>">Description</a>
                                 <div id="descriptionCategorie1<?= $i ?>" class="modal">
                                     <div class="modal-content">
@@ -230,15 +231,16 @@ function dateFr($date) {
                                 <img src="<?= $RssApplisLogiciels->channel->item[$i]->enclosure{'url'} ?>" alt="" width="50"
                                      height="250">
                                 <span class="card-title"
-                                      style="color: <?= $_COOKIE['choiceColor']; ?>"><?= $RssApplisLogiciels->channel->item[$i]->title ?></span>
+                                      style="font-weight: bold; color: <?= $_COOKIE['choiceColor']; ?> ;text-shadow: -1px 0 white, 0 1px white,
+                                              1px 0 white, 0 -1px white"><?= $RssApplisLogiciels->channel->item[$i]->title ?></span>
                             </div>
                             <div class="card-content">
                                 <p> <?= dateFr($RssApplisLogiciels->channel->item[$i]->pubDate) ?> </p>
                             </div>
                             <div class="card-action">
-                                <a class="waves-effect waves-light btn modal-trigger"
+                                <a class="waves-effect btn modal-trigger" style="background-color: <?= $_COOKIE['choiceColor']; ?>"
                                    href="<?= $RssApplisLogiciels->channel->item[$i]->link ?>">Lien vers l'article</a>
-                                <a class="waves-effect waves-light btn modal-trigger"
+                                <a class="waves-effect btn modal-trigger" style="background-color: <?= $_COOKIE['choiceColor']; ?>"
                                    href="#descriptionCategorie2<?= $i ?>">Description</a>
                                 <div id="descriptionCategorie2<?= $i ?>" class="modal">
                                     <div class="modal-content">
@@ -269,15 +271,16 @@ function dateFr($date) {
                             <div class="card-image">
                                 <img src="<?= $RssTechnos->channel->item[$i]->enclosure{'url'} ?>" alt="" width="50" height="250">
                                 <span class="card-title"
-                                      style="color: <?= $_COOKIE['choiceColor']; ?>"><?= $RssTechnos->channel->item[$i]->title ?></span>
+                                      style="font-weight: bold; color: <?= $_COOKIE['choiceColor']; ?> ;text-shadow: -1px 0 white, 0 1px white,
+                                              1px 0 white, 0 -1px white"><?= $RssTechnos->channel->item[$i]->title ?></span>
                             </div>
                             <div class="card-content">
                                 <p> <?= dateFr($RssTechnos->channel->item[$i]->pubDate) ?> </p>
                             </div>
                             <div class="card-action">
-                                <a class="waves-effect waves-light btn modal-trigger"
+                                <a class="waves-effect btn modal-trigger" style="background-color: <?= $_COOKIE['choiceColor']; ?>"
                                    href="<?= $RssTechnos->channel->item[$i]->link ?>">Lien vers l'article</a>
-                                <a class="waves-effect waves-light btn modal-trigger"
+                                <a class="waves-effect btn modal-trigger" style="background-color: <?= $_COOKIE['choiceColor']; ?>"
                                    href="#descriptionCategorie3<?= $i ?>">Description</a>
                                 <div id="descriptionCategorie3<?= $i ?>" class="modal">
                                     <div class="modal-content">
@@ -316,15 +319,16 @@ function dateFr($date) {
                 ?>
                 <div class="row">
                     <div class="col m4">
-                        <img src="<?= $RssSecurite->channel->item[$i]->enclosure{'url'} ?>" alt="" class="circle" width="100"
-                             height="50">
-                        <span class="title"><?= $RssSecurite->channel->item[$i]->title ?></span>
+                        <img src="<?= $RssSecurite->channel->item[$i]->enclosure{'url'} ?>" alt="" class="circle" width="125"
+                             height="100">
+                        <p class="title" style="font-weight: bold; color: <?= $_COOKIE['choiceColor']; ?> ;text-shadow: -1px 0 white, 0 1px white,
+                                                      1px 0 white, 0 -1px white"><?= $RssSecurite->channel->item[$i]->title ?></p>
                         <p>Sécurité<br>
                             <?= dateFr($RssSecurite->channel->item[$i]->pubDate) ?> <br>
-                            <a class="waves-effect waves-light btn modal-trigger"
+                            <a class="waves-effect btn modal-trigger" style="background-color: <?= $_COOKIE['choiceColor']; ?>"
                                href="<?= $RssSecurite->channel->item[$i]->link ?>">Lien</a>
 
-                            <a class="waves-effect waves-light btn modal-trigger" href="#modalHomeCol1<?= $i ?>">Description</a>
+                            <a class="waves-effect btn modal-trigger" style="background-color: <?= $_COOKIE['choiceColor']; ?>" href="#modalHomeCol1<?= $i ?>">Description</a>
                         <div id="modalHomeCol1<?= $i ?>" class="modal">
                             <div class="modal-content">
                                 <h4>Description</h4>
@@ -332,24 +336,22 @@ function dateFr($date) {
                             </div>
                             <div class="modal-footer">
                                 <a href="<?= $RssSecurite->channel->item[$i]->link ?>"
-                                   class="waves-effect waves-green btn-flat">Lien</a>
+                                   class="waves-effect btn-flat" style="background-color: <?= $_COOKIE['choiceColor']; ?>">Lien</a>
                                 <a href="#!" class="modal-close waves-effect waves-green btn-flat">Fermer</a>
                             </div>
                         </div>
                         </p>
-
-
-                        <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
                     </div>
                     <div class="col m4">
-                        <img src="<?= $RssApplisLogiciels->channel->item[$i]->enclosure{'url'} ?>" alt="" class="circle" width="100"
-                             height="50">
-                        <span class="title"><?= $RssApplisLogiciels->channel->item[$i]->title ?></span>
+                        <img src="<?= $RssApplisLogiciels->channel->item[$i]->enclosure{'url'} ?>" alt="" class="circle" width="125"
+                             height="100">
+                        <p class="title" style="font-weight: bold; color: <?= $_COOKIE['choiceColor']; ?> ;text-shadow: -1px 0 white, 0 1px white,
+                                                      1px 0 white, 0 -1px white"><?= $RssApplisLogiciels->channel->item[$i]->title ?></p>
                         <p>Applis/Logiciels <br>
                             <?= dateFr($RssApplisLogiciels->channel->item[$i]->pubDate) ?> <br>
-                            <a class="waves-effect waves-light btn modal-trigger"
+                            <a class="waves-effect btn modal-trigger" style="background-color: <?= $_COOKIE['choiceColor']; ?>"
                                href="<?= $RssApplisLogiciels->channel->item[$i]->link ?>">Lien</a>
-                            <a class="waves-effect waves-light btn modal-trigger" href="#modalHomeCol2<?= $i ?>">Description</a>
+                            <a class="waves-effect btn modal-trigger" style="background-color: <?= $_COOKIE['choiceColor']; ?>" href="#modalHomeCol2<?= $i ?>">Description</a>
                         <div id="modalHomeCol2<?= $i ?>" class="modal">
                             <div class="modal-content">
                                 <h4>Description</h4>
@@ -357,22 +359,22 @@ function dateFr($date) {
                             </div>
                             <div class="modal-footer">
                                 <a href="<?= $RssApplisLogiciels->channel->item[$i]->link ?>"
-                                   class="waves-effect waves-green btn-flat">Lien</a>
+                                   class="waves-effect btn-flat" style="background-color: <?= $_COOKIE['choiceColor']; ?>">Lien</a>
                                 <a href="#!" class="modal-close waves-effect waves-green btn-flat">Fermer</a>
                             </div>
                         </div>
                         </p>
-                        <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
                     </div>
                     <div class="col m4">
-                        <img src="<?= $RssTechnos->channel->item[$i]->enclosure{'url'} ?>" alt="" class="circle" width="100"
-                             height="50">
-                        <span class="title"><?= $RssTechnos->channel->item[$i]->title ?></span>
+                        <img src="<?= $RssTechnos->channel->item[$i]->enclosure{'url'} ?>" alt="" class="circle" width="125"
+                             height="100">
+                        <p class="title" style="font-weight: bold; color: <?= $_COOKIE['choiceColor']; ?> ;text-shadow: -1px 0 white, 0 1px white,
+                                                      1px 0 white, 0 -1px white"><?= $RssTechnos->channel->item[$i]->title ?></p>
                         <p>Technos <br>
                             <?= dateFr($RssTechnos->channel->item[$i]->pubDate) ?> <br>
-                            <a class="waves-effect waves-light btn modal-trigger"
+                            <a class="waves-effect btn modal-trigger" style="background-color: <?= $_COOKIE['choiceColor']; ?>"
                                href="<?= $RssTechnos->channel->item[$i]->link ?>">Lien</a>
-                            <a class="waves-effect waves-light btn modal-trigger" href="#modalHomeCol3<?= $i ?>">Description</a>
+                            <a class="waves-effect btn modal-trigger" style="background-color: <?= $_COOKIE['choiceColor']; ?>" href="#modalHomeCol3<?= $i ?>">Description</a>
                         <div id="modalHomeCol3<?= $i ?>" class="modal">
                             <div class="modal-content">
                                 <h4>Description</h4>
@@ -380,12 +382,11 @@ function dateFr($date) {
                             </div>
                             <div class="modal-footer">
                                 <a href="<?= $RssTechnos->channel->item[$i]->link ?>"
-                                   class="waves-effect waves-green btn-flat">Lien</a>
+                                   class="waves-effect btn-flat" style="background-color: <?= $_COOKIE['choiceColor']; ?>">Lien</a>
                                 <a href="#!" class="modal-close waves-effect waves-green btn-flat">Fermer</a>
                             </div>
                         </div>
-                        </p>
-                        <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+                    </p>
                     </div>
                 </div>
                 <?php
