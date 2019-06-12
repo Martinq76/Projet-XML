@@ -5,16 +5,16 @@ $_SESSION['firstName'];
 $_SESSION['articleNumber'];
 $_SESSION['choiceColor'];
 
-if (isset($_GET['lastName']) && isset($_GET['firstName']) && isset($_GET['choiceColor']) && isset($_GET['articleNumber'])) {
+if (!empty($_GET['lastName']) && !empty($_GET['firstName']) && !empty($_GET['choiceColor']) && !empty($_GET['articleNumber'])) {
     $_GET = array_map('strip_tags',$_GET);
     $loginUtili = $_GET['lastName'];
     $mdpUtili = $_GET['firstName'];
     $choiceColor = $_GET['choiceColor'];
     $articleNumber = $_GET['articleNumber'];
-    setcookie('lastName', $loginUtili, time() + 360, '/', 'Projet-XML', false, true);
-    setcookie('firstName', $mdpUtili, time() + 360, '/', 'Projet-XML', false, true);
-    setcookie('articleNumber', $articleNumber, time() + 360, '/', 'Projet-XML', false, true);
-    setcookie('choiceColor', $choiceColor, time() + 360, '/', 'Projet-XML', false, true);
+    setcookie('lastName', $loginUtili, time() + 360, '/', 'rssfeed.info', false, true);
+    setcookie('firstName', $mdpUtili, time() + 360, '/', 'rssfeed.info', false, true);
+    setcookie('articleNumber', $articleNumber, time() + 360, '/', 'rssfeed.info', false, true);
+    setcookie('choiceColor', $choiceColor, time() + 360, '/', 'rssfeed.info', false, true);
 }
 
 $XmlSecurite = "https://www.01net.com/rss/actualites/securite/";
@@ -38,16 +38,25 @@ $XmlTechnos = "https://www.01net.com/rss/actualites/technos/";
         $RssApplisLogiciels = simplexml_load_file($XmlApplisLogiciels);
         $RssTechnos = simplexml_load_file($XmlTechnos);
 ?>
-    <nav>
-        <div class="nav-wrapper" style="background-color:<?=$choiceColor?>">
-            <a href="#!" class="brand-logo toto">Logoo</a>
+    <nav class="<?php
+                    if ($_COOKIE['choiceColor'] == 'black'):
+                        echo 'black';
+                    elseif ($_COOKIE['choiceColor'] == 'blue'):
+                        echo 'blue';
+                    elseif ($_COOKIE['choiceColor'] == 'red'):
+                        echo 'red';
+                    elseif (count($_COOKIE) == 0):
+                        echo 'red';
+                    endif; ?>">
+        <div class="nav-wrapper">
+            <a href="#" class="brand-logo toto">Logoo</a>
             <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
             <ul class="right hide-on-med-and-down">
                 <li><a href="securite">Sécurité</a></li>
                 <li><a href="applis">Application</a></li>
                 <li><a href="technos">Technos</a></li>
-                <li><?= $_GET['firstName'] ?></li>
-                <li><a href="deconnexion">Déconnexion</a></li>
+                <li><?= $_COOKIE['firstName'] ?></li>
+                <li>  <a class="waves-effect waves-light btn modal-trigger" href="#inscription">Inscription</a></li>
                 <li><a href="parametres"><i class="material-icons"> settings</i></a></li>
             </ul>
         </div>
@@ -60,6 +69,59 @@ $XmlTechnos = "https://www.01net.com/rss/actualites/technos/";
         <li><a href="deconnexion">Déconnexion</a></li>
         <li><a href="parametres"><i class="material-icons"> settings</i></a></li>
     </ul>
+
+    <div id="inscription" class="modal">
+    <div class="modal-content">
+      <h4>Inscription</h4>
+      <form method="get" action="index.php">
+        <p><label>Votre nom : </label><input type="text" name="lastName" required /></p>
+        <p><label>Votre prénom : </label><input type="text" name="firstName" required /></p>
+        <p>
+            <label> Quelle est votre couleur préféré ?</label>
+        </p>
+        <p>
+            <input class="with-gap" name="choiceColor" value="black" type="radio" checked />
+            <span class="">Noir</span>
+        </p>
+        <p>
+            <label>
+                <input class="with-gap" name="choiceColor" value="blue" type="radio" />
+                <span class="cyan-text darken-2">Bleu</span>
+            </label>
+        </p>
+        <p>
+            <label>
+                <input class="with-gap" name="choiceColor" value="red" type="radio" />
+                <span class="red-text darken-4">Rouge</span>
+            </label>
+        </p>
+        <p>
+            <label> Nombre d'articles affiché par sujet sur la page d'accueil: </label>
+        </p>
+        <p>
+            <input class="with-gap" name="articleNumber" value="3" type="radio" checked />
+            <span>3</span>
+
+        </p>
+        <p>
+            <label>
+                <input class="with-gap" name="articleNumber" value="5" type="radio" />
+                <span>5</span>
+            </label>
+        </p>
+        <p>
+            <label>
+                <input class="with-gap" name="articleNumber" value="8" type="radio" />
+                <span>8</span>
+            </label>
+        </p>
+        <input type="submit" value="Valider" />
+    </form>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-close waves-effect waves-green btn-flat">Fermer</a>
+    </div>
+    </div>
 
     <?php
     if (isset($_GET['page']) && $_GET['page'] == 'securite'):
@@ -162,52 +224,6 @@ $XmlTechnos = "https://www.01net.com/rss/actualites/technos/";
     </div>
     <?php
 endfor;
-    else: ?>
-    <form method="get" action="index.php">
-        <p><label>Votre nom : </label><input type="text" name="lastName" required /></p>
-        <p><label>Votre prénom : </label><input type="text" name="firstName" required /></p>
-        <p>
-            <label> Quelle est votre couleur préféré ?</label>
-        </p>
-        <p>
-            <input class="with-gap" name="choiceColor" value="#353535" type="radio" checked />
-            <span class="">Noir</span>
-        </p>
-        <p>
-            <label>
-                <input class="with-gap" name="choiceColor" value="#086788" type="radio" />
-                <span class="cyan-text darken-2">Bleu</span>
-            </label>
-        </p>
-        <p>
-            <label>
-                <input class="with-gap" name="choiceColor" value="#ba0000" type="radio" />
-                <span class="red-text darken-4">Rouge</span>
-            </label>
-        </p>
-        <p>
-            <label> Nombre d'articles affiché par sujet sur la page d'accueil: </label>
-        </p>
-        <p>
-            <input class="with-gap" name="articleNumber" value="3" type="radio" checked />
-            <span>3</span>
-
-        </p>
-        <p>
-            <label>
-                <input class="with-gap" name="articleNumber" value="5" type="radio" />
-                <span>5</span>
-            </label>
-        </p>
-        <p>
-            <label>
-                <input class="with-gap" name="articleNumber" value="8" type="radio" />
-                <span>8</span>
-            </label>
-        </p>
-        <input type="submit" value="Valider" />
-    </form>
-    <?php
     endif; ?>
 
 
