@@ -1,5 +1,6 @@
 Options +FollowSymlinks
 RewriteEngine On
+RewriteRule ^accueil$ index.php?page=accueil [L]
 RewriteRule ^securite$ index.php?page=securite [L]
 RewriteRule ^applis$ index.php?page=applis [L]
 RewriteRule ^technos$ index.php?page=technos [L]
