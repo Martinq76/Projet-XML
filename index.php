@@ -1,10 +1,4 @@
 <?php
-session_start();
-$_SESSION['lastName'];
-$_SESSION['firstName'];
-$_SESSION['articleNumber'];
-$_SESSION['choiceColor'];
-
 if (!empty($_GET['lastName']) && !empty($_GET['firstName']) && !empty($_GET['choiceColor']) && !empty($_GET['articleNumber'])) {
     $_GET = array_map('strip_tags',$_GET);
     $loginUtili = $_GET['lastName'];
@@ -15,7 +9,15 @@ if (!empty($_GET['lastName']) && !empty($_GET['firstName']) && !empty($_GET['cho
     setcookie('firstName', $mdpUtili, time() + 360, '/', 'rssfeed.info', false, true);
     setcookie('articleNumber', $articleNumber, time() + 360, '/', 'rssfeed.info', false, true);
     setcookie('choiceColor', $choiceColor, time() + 360, '/', 'rssfeed.info', false, true);
+    header('location: /');
 }
+
+if (isset($_GET) && $_GET['page'] == 'deconnexion'):
+    unset($_COOKIE['lastName']);
+    unset($_COOKIE['firstName']);
+    unset($_COOKIE['articleNumber']);
+    unset($_COOKIE['choiceColor']);
+endif;
 
 $XmlSecurite = "https://www.01net.com/rss/actualites/securite/";
 $XmlApplisLogiciels = "https://www.01net.com/rss/actualites/applis-logiciels/";
@@ -49,14 +51,15 @@ $XmlTechnos = "https://www.01net.com/rss/actualites/technos/";
                         echo 'red';
                     endif; ?>">
         <div class="nav-wrapper">
-            <a href="index.php" class="brand-logo toto">Logoo</a>
+            <a href="/" class="brand-logo toto">Logoo</a>
             <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
             <ul class="right hide-on-med-and-down">
                 <li><a href="securite">Sécurité</a></li>
                 <li><a href="applis">Application</a></li>
                 <li><a href="technos">Technos</a></li>
                 <li><?= $_COOKIE['firstName'] ?></li>
-                <li> <a class="waves-effect waves-light btn modal-trigger" href="#inscription">Inscription</a></li>
+                <li><a class="waves-effect waves-light btn modal-trigger" href="#inscription">Inscription</a></li>
+                <li><a href="deconnexion">Déconnexion</a></li>
                 <li><a href="#parametres" class="modal-trigger"><i class="material-icons"> settings</i></a></li>
             </ul>
         </div>
@@ -67,6 +70,7 @@ $XmlTechnos = "https://www.01net.com/rss/actualites/technos/";
         <li><a href="technos">Technos</a></li>
         <li><?= $_GET['firstName'] ?></li>
         <li><a class="waves-effect waves-light btn modal-trigger" href="#inscription">Inscription</a></li>
+        <li><a href="deconnexion">Déconnexion</a></li>
         <li><a href="#parametres" class="modal-trigger"><i class="material-icons"> settings</i></a></li>
     </ul>
 
@@ -125,23 +129,23 @@ $XmlTechnos = "https://www.01net.com/rss/actualites/technos/";
 
     <div id="parametres" class="modal">
         <div class="modal-content">
-            <h4>Paramètres</h4>
+            <h4>Préférences utilisateur</h4>
             <form method="get" action="index.php">
                 <label> Quelle est votre couleur préféré ?</label>
                 </p>
                 <p>
-                    <input class="with-gap" name="choiceColo" value="black" type="radio" checked />
+                    <input class="with-gap" name="choiceColor" value="black" type="radio" checked />
                     <span class="">Noir</span>
                 </p>
                 <p>
                     <label>
-                        <input class="with-gap" name="choiceColo" value="blue" type="radio" />
+                        <input class="with-gap" name="choiceColor" value="blue" type="radio" />
                         <span class="cyan-text darken-2">Bleu</span>
                     </label>
                 </p>
                 <p>
                     <label>
-                        <input class="with-gap" name="choiceColo" value="red" type="radio" />
+                        <input class="with-gap" name="choiceColor" value="red" type="radio" />
                         <span class="red-text darken-4">Rouge</span>
                     </label>
                 </p>
@@ -169,7 +173,7 @@ $XmlTechnos = "https://www.01net.com/rss/actualites/technos/";
             </form>
         </div>
         <div class="modal-footer">
-            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Déconnexion</a>
+            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Fermer</a>
         </div>
     </div>
 
@@ -177,9 +181,8 @@ $XmlTechnos = "https://www.01net.com/rss/actualites/technos/";
     if (isset($_GET['page']) && $_GET['page'] == 'securite'): ?>
     <div class="row">
         <?php
-                    for ($i = 0; $i <= 29; $i++):
-                        ?>
-
+        for ($i = 0; $i <= 29; $i++):
+        ?>
         <div class="col s12 m4">
             <div class="card">
                 <div class="card-image">
@@ -293,24 +296,23 @@ $XmlTechnos = "https://www.01net.com/rss/actualites/technos/";
     <?php
     endif;
 
-    if (!empty($loginUtili) && !empty($mdpUtili) && !empty($choiceColor) && !empty($articleNumber)): ?>
+    if (!empty($_COOKIE['firstName']) && !empty($_COOKIE['lastName']) && !empty($_COOKIE['choiceColor']) && !empty($_COOKIE['articleNumber'])): ?>
     <div class="row">
         <div class="col m4">
-            <h1 class="titleHome" style="color: <?= $choiceColor ?>"><b><u>Sécurité</u></b></h1>
+            <h1 class="titleHome" style="color: <?= $_COOKIE['choiceColor'] ?>"><b><u>Sécurité</u></b></h1>
         </div>
         <div class="col m4">
-            <h1 class="titleHome" style="color: <?= $choiceColor ?>"><b><u>Applis/Logiciels</u></b></h1>
+            <h1 class="titleHome" style="color: <?= $_COOKIE['choiceColor'] ?>"><b><u>Applis/Logiciels</u></b></h1>
         </div>
         <div class="col m4">
-            <h1 class="titleHome" style="color: <?= $choiceColor ?>"><b><u>Technos</u></b></h1>
+            <h1 class="titleHome" style="color: <?= $_COOKIE['choiceColor'] ?>"><b><u>Technos</u></b></h1>
         </div>
     </div>
     <?php
-    for ($i = 0; $i < $_GET['articleNumber']; $i++): 
+    for ($i = 0; $i < $_COOKIE['articleNumber']; $i++): 
     setlocale (LC_TIME, 'fr_FR.utf8','fra'); ?>
     <div class="row">
         <div class="col m4">
-
             <img src="<?= $RssSecurite->channel->item[$i]->enclosure{'url'} ?>" alt="" class="circle" width="100"
                 height="50">
             <span class="title"><?= $RssSecurite->channel->item[$i]->title ?></span>
